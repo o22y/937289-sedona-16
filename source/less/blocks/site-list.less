@@ -1,21 +1,18 @@
 .site-list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+  .reset-list();
 
   font-size: 18px;
   line-height: 40px;
   font-weight: 700;
   letter-spacing: normal;
-  text-transform: uppercase;
+  text-transform: @letter-transform;
   color: #ffffff;
   opacity: 1;
-  &__item {
+}
+  .site-list__item {
     background-color: #81b3d2;
-    a {
+}
+  .site-list__item a {
       color: #ffffff;
       text-decoration: none;
-    }
-  }
 }
