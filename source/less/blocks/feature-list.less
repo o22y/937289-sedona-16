@@ -27,3 +27,29 @@
   color: #333333;
   opacity: 1;
 }
+
+@media (min-width: @tablet-width) {
+  .feature-list {
+    display: flex;
+  }
+  .feature-list__item {
+    display: flex;
+    flex-direction: column;
+
+    width: 256px;
+    height: 256px;
+  }
+  .feature-list__title {
+    text-align: center;
+  }
+  .feature-list__description{
+
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feature-list__item {
+    width: 400px;
+  }
+}

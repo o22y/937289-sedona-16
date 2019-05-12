@@ -1,9 +1,25 @@
 .page-header {
-    background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+
+  min-height: 668px;
+  background-color: #ffffff;
 }
 .page-header__logo {
 
 }
 .page-header__logo-image {
 
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    min-height: 574px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    height: 576px;
+  }
 }
