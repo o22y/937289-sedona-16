@@ -8,6 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div class="container">
 <header class="page-header">
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -34,11 +35,15 @@
     <h1 class="page-main__head">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
     <h2 class="page-main__additional">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</h2>
     <section class="advantages">
+      <div class="advantages__item-wrapper">
     <div class="advantages__item advantages__item--blue-back"> <!--blue-back - в будущем, модификатор фона!-->
       <h3 class="advantages__title advantages__title--blue-back">Настоящий городок</h3>
       <b class="advantages__number advantages__number--blue-back">-№1-</b>
       <p class="advantages__description advantages__description--blue-back">Седона не аттрацкион для туристов, там течет своя жизнь</p>
+    </div>
+      <div class="advantages__photo-container">
       <img class="advantages__photo" src="#" width="226" height="30" alt="Фотография городка Седона 1">
+    </div>
     </div>
     <div class="advantages__item">
       <ul class="advantages__item feature-list">
@@ -56,12 +61,16 @@
         </li>
       </ul>
     </div>
-    <div class="advantages__item advantages__item--blue-back">
+    <div class="advantages__item-wrapper">
+    <div class="advantages__item advantages__item--blue-back advantages__item--reverse">
       <h3 class="advantages__title advantages__title--blue-back">Там есть мост дъявола</h3>
       <b class="advantages__number advantages__number--blue-back">-№2-</b>
       <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </div>
+      <div class="advantages__photo-container">
       <img class="advantages__photo" src="#" width="226" height="30" alt="Фотография моста дъявола">
     </div>
+  </div>
         <div class="advantages-wrapper">
         <div class="advantages__item advantages__item--gray-back">
           <h3 class="advantages__title">Небольшая площадь</h3>
@@ -83,7 +92,10 @@
       <!--Заинтересовались?!-->
   </main>
   <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__hashtag-container">
 <b class="page-footer__hashtag-slogan">#VISITSEDONA</b>
+</div>
 <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -102,5 +114,7 @@
         <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
   </footer>
+</div>
+</div>
   </body>
 </html>

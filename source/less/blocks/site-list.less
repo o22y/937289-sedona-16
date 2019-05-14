@@ -27,8 +27,30 @@
   .site-list__item a {
       color: #000000;
   }
+  .site-list__item:nth-child(1),
+  .site-list__item:nth-child(3) {
+    margin-right: 30px;
+  }
+  .site-list__item:nth-child(1) {
+    padding-left: 48px;
+  }
+  .site-list__item:nth-child(2) {
+    margin-right: 183px;
+  }
+  .site-list__item:nth-last-child {
+    margin-right: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
-
+  .site-list__item:nth-child(1),
+  .site-list__item:nth-child(3) {
+    margin-right: 50px;
+  }
+  .site-list__item:nth-child(2) {
+    margin-right: 200px;
+  }
+  .site-list__item:nth-last-child {
+    margin-right: 0;
+  }
 }

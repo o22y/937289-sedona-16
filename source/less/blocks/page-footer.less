@@ -1,6 +1,9 @@
 .page-footer {
 
 }
+
+.page-footer__wrapper {
+}
 .page-footer__hashtag-slogan {
   .reset();
   margin-bottom: 40px;
@@ -15,4 +18,20 @@
 }
 .page-footer__social {
 
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+  }
+  .page-footer__hashtag-container,
+  .page-footer__social,
+  .page-footer__copyright {
+    width: 256px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .page-footer__hashtag-container {
+    width: 400px;
+  }
 }
