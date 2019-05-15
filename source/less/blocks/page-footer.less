@@ -23,6 +23,7 @@
 @media (min-width: @tablet-width) {
   .page-footer__wrapper {
     display: flex;
+    justify-content: space-around;
   }
   .page-footer__hashtag-container,
   .page-footer__social,
@@ -31,7 +32,9 @@
   }
 }
 @media (min-width: @desktop-width) {
-  .page-footer__hashtag-container {
+  .page-footer__hashtag-container,
+  .page-footer__social,
+  .page-footer__copyright {
     width: 400px;
   }
 }
