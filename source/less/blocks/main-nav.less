@@ -1,12 +1,43 @@
 .main-nav {
-
+  width: 320px;
+  margin: 0 auto;
 }
 .main-nav__toggle {
 
 }
-.main-nav__wrapper {
-
-}
 .main-nav__list {
+  .reset-list();
+}
 
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: 768px;
+    margin: 0 auto;
+
+    position: relative;
+  }
+  .main-nav__list a {
+      display: flex;
+
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 700;
+      letter-spacing: normal;
+      text-transform: @letter-transform;
+      color: #000000;
+      opacity: 1;
+  }
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .main-nav__toggle {
+    display: none;
+  }
 }

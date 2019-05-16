@@ -16,3 +16,32 @@
       color: #ffffff;
       text-decoration: none;
 }
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    text-align: center;
+
+    padding-top: 16px;
+    padding-left: 45px;
+  }
+  .site-list__item {
+    background-color: #ffffff;
+    width: 20%;
+}
+  .site-list__item a {
+      color: #000000;
+  }
+  .site-list__item:nth-child(3) {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    display: flex;
+    text-align: center;
+
+    padding-left: 90px;
+  }
+}

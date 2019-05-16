@@ -27,3 +27,34 @@
   color: #333333;
   opacity: 1;
 }
+
+@media (min-width: @tablet-width) {
+  .feature-list {
+    display: flex;
+  }
+  .feature-list__item {
+
+    width: 256px;
+
+    padding-left: 45px;
+    padding-right: 45px;
+
+    padding-top: 205px;
+    padding-bottom: 65px;
+  }
+  .feature-list__title {
+    text-align: center;
+  }
+  .feature-list__description{
+
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feature-list__item {
+    width: 400px;
+
+    padding-bottom: 85px;
+  }
+}

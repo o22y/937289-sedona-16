@@ -1,8 +1,14 @@
 .advantages {
 
 }
+.advantages-wrapper {
+  display: flex;
+}
 .advantages__item {
   .reset();
+}
+.advantages__item-wrapper {
+
 }
 .advantages__item--blue-back {
   .reset();
@@ -21,6 +27,9 @@
 .advantages__item--gray-back {
   background-color: #eeeeee;
 }
+.advantages__item--reverse {
+
+}
 .advantages__title {
   .reset();
   margin-bottom: 14px;
@@ -32,6 +41,21 @@
   text-transform: @letter-transform;
   color: #000000;
   opacity: 1;
+
+  text-align: center;
+}
+.advantages__title--blue-back {
+  .reset();
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  letter-spacing: normal;
+  text-transform: @letter-transform;
+  color: #ffffff;
+  opacity: 1;
+
+  background-color: @bg-contrast;
 }
 .advantages__number {
   .reset();
@@ -44,6 +68,8 @@
   text-transform: @letter-transform;
   color: #333333;
   opacity: 1;
+
+  text-align: center;
 }
 .advantages__number--blue-back {
   .reset();
@@ -57,6 +83,8 @@
   color: #ffffff;
   opacity: 1;
 
+  text-align: center;
+
   background-color: @bg-contrast;
 }
 .advantages__description {
@@ -69,6 +97,8 @@
   text-transform: @letter-transform;
   color: #333333;
   opacity: 1;
+
+  text-align: center;
 }
 .advantages__description--blue-back {
   .reset();
@@ -85,4 +115,54 @@
 }
 .advantages__photo {
 
+}
+
+@media (min-width: @tablet-width) {
+  .advantages-wrapper {
+  display: flex;
+  }
+  .advantages__item {
+    width: 256px;
+    height: 256px;
+
+    text-align: center;
+  }
+  .advantages__item--blue-back {
+    padding: 45px 40px 45px 40px;
+  }
+  .advantages__item-wrapper {
+    display: flex;
+  }
+  .advantages__item--reverse {
+    order: 2;
+
+    margin-bottom: 0;
+  }
+  .advantages__photo-container {
+    width: 512px;
+  }
+  .advantages__item--gray-back {
+    padding: 50px 45px 50px 45px;
+
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__item {
+    width: 400px;
+  }
+  .advantages__item--blue-back {
+    padding: 55px 65px 60px 65px;
+  }
+  .advantages__item--reverse {
+    order: 2;
+
+    margin-bottom: 0;
+
+    padding: 55px 92px 60px 92px;
+  }
+  .advantages__photo-container {
+    width: 800px;
+  }
 }

@@ -2,7 +2,9 @@
 
 }
 .social__list {
-  list-style: none;
+  .reset-list();
+
+  display: flex;
 }
 .social__item {
   color: #ffffff;
@@ -19,5 +21,14 @@
 
 }
 .social__link--youtube {
+
+}
+
+@media (min-width: @tablet-width) {
+  .social__list {
+    display: flex;
+  }
+}
+@media (min-width: @desktop-width) {
 
 }

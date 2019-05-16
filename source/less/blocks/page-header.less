@@ -1,9 +1,37 @@
 .page-header {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 .page-header__logo {
-
 }
 .page-header__logo-image {
 
+}
+
+.page-header__background-image-container {
+  width: 320px;
+  height: 389px;
+}
+.page-header__background-image {
+
+}
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    position: absolute;
+
+    top: 31px;
+    left: 42%;
+
+    min-height: 55px;
+  }
+  .page-header__background-image-container {
+    width: @tablet-width;
+    height: 518px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__background-image-container {
+    width: @desktop-width;
+    height: 518px;
+  }
 }
