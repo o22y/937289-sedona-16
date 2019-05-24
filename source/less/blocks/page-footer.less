@@ -3,10 +3,11 @@
 }
 
 .page-footer__wrapper {
+  text-align: center;
 }
 .page-footer__hashtag-slogan {
   .reset();
-  margin-bottom: 40px;
+
 
   font-size: 18px;
   line-height: 26px;
@@ -16,6 +17,9 @@
   color: #000000;
   opacity: 1;
 }
+.page-footer__hashtag-container {
+    margin-bottom: 40px;
+}
 .page-footer__social {
 
 }
@@ -24,11 +28,16 @@
   .page-footer__wrapper {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+
+    margin-bottom: 35px;
   }
   .page-footer__hashtag-container,
   .page-footer__social,
   .page-footer__copyright {
     width: 256px;
+
+    text-align: center;
   }
 }
 @media (min-width: @desktop-width) {

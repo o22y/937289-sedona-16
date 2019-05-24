@@ -11,7 +11,15 @@
     <div class="container">
 <header class="page-header">
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle main-nav--closed main-nav--nojs" type="button">
+          <svg class="main-nav__toggle-icon"version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23px" height="22px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+  <g>
+    <rect fill="#81b3d2" width="22.928" height="3.964"/>
+    <rect fill="#81b3d2" y="9.009" width="22.928" height="3.964"/>
+    <rect fill="#81b3d2" y="18.018" width="22.928" height="3.964"/>
+  </g>
+</svg>
+<span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a>Главная</a>
@@ -27,40 +35,57 @@
           </li>
         </ul>
       </nav>
+      <div class="page-header__logo-container">
       <a class="page-header__logo">
-            <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="226" height="30" alt="Поиск гостиниц «Седона»">
+            <img class="page-header__logo-image" src="../img/logo-sedona-mobile.svg" width="226" height="30" alt="Поиск гостиниц «Седона»">
           </a>
+        </div>
       <div class="page-header__background-image-container">
-        <img class="page-header__background-image" src="img/background-image.jpeg" width="320" height="389" alt="Добро пожаловать в Седону">
+        <div class="page-header__background-image-container-triangle"></div>
       </div>
 </header>
+<script>
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.main-nav__toggle');
+
+  navMain.classList.remove('main-nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+</script>
 <main class="page-main">
-    <h1 class="page-main__head">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+    <h1 class="page-main__head">Седона - небольшой <br> городок в Аризоне, <br> заслуживающий большего!</h1>
     <h2 class="page-main__additional">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</h2>
     <section class="advantages">
       <div class="advantages__item-wrapper">
-    <div class="advantages__item advantages__item--blue-back"> <!--blue-back - в будущем, модификатор фона!-->
+    <div class="advantages__item advantages__item--blue-back advantages__item--triangle"> <!--blue-back - в будущем, модификатор фона!-->
       <h3 class="advantages__title advantages__title--blue-back">Настоящий городок</h3>
       <b class="advantages__number advantages__number--blue-back">-№1-</b>
       <p class="advantages__description advantages__description--blue-back">Седона не аттрацкион для туристов, там течет своя жизнь</p>
     </div>
-      <div class="advantages__photo-container">
-      <img class="advantages__photo" src="#" width="226" height="30" alt="Фотография городка Седона 1">
+      <div class="advantages__photo-container advantages__photo-container--main-city">
     </div>
     </div>
     <div class="feature-list__container">
       <ul class="feature-list">
-        <li class="feature-list__item">
+        <li class="feature-list__item feature-list__item--house-icon">
           <h3 class="feature-list__title">Жилье</h3>
           <p class="feature-list__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </li>
-        <li class="feature-list__item">
-          <h3 class="feature-list__title">Еда</h3>
-          <p class="feature-list__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
-        </li>
-        <li class="feature-list__item">
+        <li class="feature-list__item feature-list__item--present-icon">
           <h3 class="feature-list__title">Сувениры</h3>
           <p class="feature-list__description">Не только китайского, но и местного производства!</p>
+        </li>
+        <li class="feature-list__item feature-list__item--burger-icon">
+          <h3 class="feature-list__title">Еда</h3>
+          <p class="feature-list__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
         </li>
       </ul>
     </div>
@@ -68,26 +93,25 @@
     <div class="advantages__item advantages__item--blue-back advantages__item--reverse">
       <h3 class="advantages__title advantages__title--blue-back">Там есть мост дъявола</h3>
       <b class="advantages__number advantages__number--blue-back">-№2-</b>
-      <p class="advantages__description--blue-back">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+      <p class="advantages__description advantages__description--blue-back">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
-      <div class="advantages__photo-container">
-      <img class="advantages__photo" src="#" width="226" height="30" alt="Фотография моста дъявола">
+      <div class="advantages__photo-container advantages__photo-container--main-bridge">
     </div>
   </div>
-        <div class="advantages-wrapper">
+        <div class="advantages-wrapper advantages-wrapper--three-elements">
         <div class="advantages__item advantages__item--gray-back">
           <h3 class="advantages__title">Небольшая площадь</h3>
-          <b>-№3-</b>
+          <b class="advantages__number advantages__number--gray-back">-№3-</b>
           <p class="advantages__description">Все интересные места находятся очень близко</p>
         </div>
         <div class="advantages__item advantages__item--gray-back">
           <h3 class="advantages__title">Красивая дорога</h3>
-          <b>-№4-</b>
+          <b class="advantages__number advantages__number--gray-back">-№4-</b>
           <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
         </div>
           <div class="advantages__item advantages__item--gray-back">
             <h3 class="advantages__title">Мало туристов</h3>
-            <b>-№5-</b>
+            <b class="advantages__number advantages__number--gray-back">-№5-</b>
             <p class="advantages__description">Большинство едет в гранд каньон и толпится там</p>
           </div>
         </div>
@@ -102,19 +126,19 @@
 <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy"><span class="visually-hidden">Мы в Твиттере</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы на Ютубе</a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy"><span class="visually-hidden">Мы на Ютубе</span></a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
       </div>
   </footer>
 </div>
