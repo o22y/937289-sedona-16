@@ -1,5 +1,6 @@
 .copyright {
-
+  margin-bottom: 35px;
+  padding-right: 45px;
 }
 .copyright__text {
   .reset();
@@ -13,5 +14,22 @@
   opacity: 1;
 }
 .copyright__link {
+  position: relative;
+}
+.copyright__link::before {
+  content: "";
 
+  width: 27px;
+  height: 34px;
+
+  position: absolute;
+
+  top: -8px;
+  left: 20px;
+  position: absolute;
+
+  background-image: url(../img/logo-htmlacademy.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
