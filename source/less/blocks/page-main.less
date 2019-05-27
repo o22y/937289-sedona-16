@@ -30,6 +30,34 @@
   text-align: center;
 }
 
+.page-main__map-container {
+  position: relative;
+
+  margin-bottom: 35px;
+
+  min-height: 350px;
+}
+
+.page-main__map-container::before {
+  content: "";
+
+  position: absolute;
+
+  top: 45%;
+  left: 45%;
+
+  width: 27px;
+  height: 27px;
+
+  background-image: url(../img/icon-map-marker.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.page-main__map {
+}
+
 @media (min-width: @tablet-width) {
   .page-main__head br:nth-of-type(1) {
     display: none;
@@ -37,8 +65,12 @@
   .page-main__additional br:nth-of-type(1) {
     display: none;
   }
-}
 
+  .page-main__map-container::before {
+
+    left: 48%;
+  }
+}
 @media (min-width: @desktop-width) {
   .page-main__head br {
     display: none;
