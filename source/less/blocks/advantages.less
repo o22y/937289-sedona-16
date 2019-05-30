@@ -1,24 +1,21 @@
-.advantages {
-
-}
 .advantages-wrapper {
   display: flex;
   flex-direction: column;
 
   margin-bottom: 30px;
 }
+
 .advantages__item {
   .reset();
 
   text-align: center;
 }
+
 .advantages__item-wrapper {
   display: flex;
   flex-direction: column;
 }
-.advantages-wrapper--three-elements {
 
-}
 .advantages__item--blue-back {
   .reset();
   margin-bottom: 14px;
@@ -35,12 +32,10 @@
 
   background-color: @bg-contrast;
 }
+
 .advantages__item--gray-back {
   padding: 30px 15px;
   background-color: #eeeeee;
-}
-.advantages__item--reverse {
-
 }
 
 .advantages__item--triangle,
@@ -56,6 +51,7 @@
 
   margin-bottom: 0;
 }
+
 .advantages__item--triangle::before {
   content: "";
 
@@ -67,10 +63,11 @@
   top: -1px;
   left: 0;
 
-  background-image: url(../img/bg-triangle.svg);
+  background-image: url("../img/bg-triangle.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
+
 .advantages__title {
   .reset();
   margin-bottom: 14px;
@@ -85,6 +82,7 @@
 
   text-align: center;
 }
+
 .advantages__title--blue-back {
   .reset();
 
@@ -98,6 +96,7 @@
 
   background-color: @bg-contrast;
 }
+
 .advantages__number {
   .reset();
   margin-bottom: 22px;
@@ -112,6 +111,7 @@
 
   text-align: center;
 }
+
 .advantages__number--blue-back {
   .reset();
   margin-top: 20px;
@@ -129,12 +129,14 @@
 
   background-color: @bg-contrast;
 }
+
 .advantages__number--gray-back {
   margin-top: 20px;
   margin-bottom: 22px;
 
   color: #000000;
 }
+
 .advantages__description {
   .reset();
 
@@ -148,6 +150,7 @@
 
   text-align: center;
 }
+
 .advantages__description--blue-back {
   .reset();
 
@@ -161,11 +164,12 @@
 
   background-color: @bg-contrast;
 }
+
 .advantages__photo-container--main-city {
   width: 320px;
   height: 260px;
 
-  background-image: url(../img/main-city-mobile@1x.jpg);
+  background-image: url("../img/main-city-mobile@1x.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -175,15 +179,16 @@
   @media
   (min-resolution: @retina-dpi),
   (min-resolution: @retina-dppx) {
-    background-image: url(../img/main-city-mobile@2x.jpg);
+    background-image: url("../img/main-city-mobile@2x.jpg");
     background-size: cover;
   }
 }
+
 .advantages__photo-container--main-bridge {
   width: 320px;
   height: 260px;
 
-  background-image: url(../img/main-bridge-mobile@1x.jpg);
+  background-image: url("../img/main-bridge-mobile@1x.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -192,12 +197,9 @@
   @media
   (min-resolution: @retina-dpi),
   (min-resolution: @retina-dppx) {
-    background-image: url(../img/main-bridge-mobile@2x.jpg);
+    background-image: url("../img/main-bridge-mobile@2x.jpg");
     background-size: cover;
   }
-}
-.advantages__photo {
-
 }
 
 @media (min-width: @tablet-width) {
@@ -207,6 +209,7 @@
 
   margin-bottom: 60px;
   }
+
   .advantages__item {
     width: 256px;
     height: 256px;
@@ -217,40 +220,44 @@
     flex-direction: column;
     justify-content: center;
   }
+
   .advantages__item--blue-back {
     padding: 0;
   }
+
   .advantages__item-wrapper {
     display: flex;
     flex-direction: row;
 
     margin-bottom: 0;
   }
+
   .advantages__item--reverse {
     order: 2;
 
     margin-bottom: 0;
   }
+
   .advantages__item--triangle,
   .advantages__item--reverse {
     padding: 0;
   }
+
   .advantages__photo-container {
     width: 512px;
 
     margin-bottom: 0;
   }
-  .advantages__item--gray-back {
 
-  }
   .advantages__item--triangle::before {
     display: none;
   }
+
   .advantages__photo-container--main-city {
     width: 512px;
     height: 256px;
 
-    background-image: url(../img/main-city-tablet@1x.jpg);
+    background-image: url("../img/main-city-tablet@1x.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -258,15 +265,16 @@
     @media
     (min-resolution: @retina-dpi),
     (min-resolution: @retina-dppx) {
-      background-image: url(../img/main-city-tablet@2x.jpg);
+      background-image: url("../img/main-city-tablet@2x.jpg");
       background-size: cover;
     }
   }
+
   .advantages__photo-container--main-bridge {
     width: 512px;
     height: 256px;
 
-    background-image: url(../img/main-bridge-tablet@1x.jpg);
+    background-image: url("../img/main-bridge-tablet@1x.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -275,7 +283,7 @@
     @media
     (min-resolution: @retina-dpi),
     (min-resolution: @retina-dppx) {
-      background-image: url(../img/main-bridge-tablet@2x.jpg);
+      background-image: url("../img/main-bridge-tablet@2x.jpg");
       background-size: cover;
     }
   }
@@ -285,9 +293,11 @@
   .advantages__item {
     width: 400px;
   }
+
   .advantages__item--blue-back {
     padding: 0;
   }
+
   .advantages__item--reverse {
     order: 2;
 
@@ -295,16 +305,18 @@
 
     padding: 0;
   }
+
   .advantages__photo-container {
     width: 800px;
 
     margin-bottom: 0;
   }
+
   .advantages__photo-container--main-city {
     width: 800px;
     height: 256px;
 
-    background-image: url(../img/main-city-desktop@1x.jpg);
+    background-image: url("../img/main-city-desktop@1x.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -312,15 +324,16 @@
     @media
     (min-resolution: @retina-dpi),
     (min-resolution: @retina-dppx) {
-      background-image: url(../img/main-city-desktop@2x.jpg);
+      background-image: url("../img/main-city-desktop@2x.jpg");
       background-size: cover;
     }
   }
+
   .advantages__photo-container--main-bridge {
     width: 800px;
     height: 256px;
 
-    background-image: url(../img/main-bridge-desktop@1x.jpg);
+    background-image: url("../img/main-bridge-desktop@1x.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -328,7 +341,7 @@
     @media
     (min-resolution: @retina-dpi),
     (min-resolution: @retina-dppx) {
-      background-image: url(../img/main-bridge-desktop@2x.jpg);
+      background-image: url("../img/main-bridge-desktop@2x.jpg");
       background-size: cover;
     }
   }

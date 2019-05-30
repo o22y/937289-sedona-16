@@ -1,31 +1,17 @@
-.gallery {
-
-}
 .gallery__list {
   .reset-list();
 }
-.gallery__wrapper {
 
-}
 .gallery__item-photo {
   margin-bottom: 45px;
 }
+
 .gallery__item-photo-container {
   height: 280px;
 
   margin-bottom: 20px;
 }
-.gallery__item-photo--sunset {
-}
-.gallery__item-photo--cactus {
-}
-.gallery__item-photo--roads {
-}
-.gallery__item-photo--bridge {
-}
-.gallery__photo {
 
-}
 .gallery__title {
   .reset();
   margin-bottom: 10px;
@@ -38,6 +24,7 @@
   color: #000000;
   opacity: 1;
 }
+
 .gallery__author {
   .reset();
   margin-bottom: 14px;
@@ -50,6 +37,7 @@
   color: #000000;
   opacity: 1;
 }
+
 .gallery__likes {
   position: relative;
 
@@ -64,6 +52,7 @@
   color: #000000;
   opacity: 1;
 }
+
 .gallery__likes-icon {
   position: absolute;
 
@@ -73,25 +62,32 @@
   width: 23px;
   height: 21px;
 }
+
 @media (min-width: @tablet-width) {
   .gallery {
     margin-bottom: 72px;
   }
-  .reset-list();
+
   .gallery__list {
+    .reset-list();
+
     display: flex;
     flex-wrap: wrap;
   }
+
   .gallery__wrapper {
     display: flex;
     flex-wrap: wrap;
   }
+
   .gallery__item-photo {
     margin-bottom: 0;
   }
+
   .gallery__item-photo-container {
     margin-bottom: 0;
   }
+
   .gallery__item-info-container {
     display: flex;
     flex-wrap: wrap;
@@ -104,24 +100,29 @@
 
     background-color: #eaeaea;
   }
+
   .gallery__likes {
     margin-left: auto;
-
   }
+
   .gallery__likes-icon {
     path {
-      fill: #a9a9a9
+      fill: #a9a9a9;
     }
   }
+
   .gallery__item-photo--sunset {
     height: 400px;
   }
+
   .gallery__item-photo--cactus {
     height: 267px;
   }
+
   .gallery__item-photo--roads {
     height: 267px;
   }
+
   .gallery__item-photo--bridge {
     height: 267px;
   }
@@ -132,9 +133,11 @@
     display: flex;
     flex-wrap: wrap;
   }
+
   .gallery__item-photo {
     position: relative;
   }
+
   .gallery__item-info-container {
     position: absolute;
 
@@ -156,30 +159,37 @@
 
     z-index: 10;
   }
-   .gallery__title,
-   .gallery__author,
-   .gallery__likes {
+
+  .gallery__title,
+  .gallery__author,
+  .gallery__likes {
     color: #ffffff;
   }
+
   .gallery__likes-icon {
     path {
       fill: #ffffff;
     }
   }
+
   .gallery__item-info-container--sunset {
     top: 290px;
 
     width: 1172px;
   }
+
   .gallery__item-photo--sunset {
     height: 400px;
   }
+
   .gallery__item-photo--cactus {
     height: 267px;
   }
+
   .gallery__item-photo--roads {
     height: 267px;
   }
+
   .gallery__item-photo--bridge {
     height: 267px;
   }
