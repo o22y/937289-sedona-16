@@ -97,6 +97,10 @@
   background-color: @bg-contrast;
 }
 
+.advantages__title br {
+  display: none;
+}
+
 .advantages__number {
   .reset();
   margin-bottom: 22px;
@@ -207,7 +211,7 @@
   display: flex;
   flex-direction: row;
 
-  margin-bottom: 60px;
+  margin-bottom: 0;
   }
 
   .advantages__item {
@@ -251,6 +255,10 @@
 
   .advantages__item--triangle::before {
     display: none;
+  }
+
+  .advantages__title br {
+    display: block;
   }
 
   .advantages__photo-container--main-city {
@@ -344,5 +352,9 @@
       background-image: url("../img/main-bridge-desktop@2x.jpg");
       background-size: cover;
     }
+  }
+
+  .advantages-wrapper {
+    margin-bottom: 0;
   }
 }
