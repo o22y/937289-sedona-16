@@ -8,7 +8,16 @@
   margin-bottom: 50px;
   padding: 0 20px;
 }
+.interesting--video {
+  .reset();
 
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 145px;
+}
 .interesting__title {
   .reset();
   margin-bottom: 17px;
@@ -65,12 +74,233 @@
 
   background-color: @bg-contrast;
 }
+
+.interesting__button:hover,
+.interesting__button:focus {
+  background-color: #669ec0;
+}
+
+.interesting__button:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.interesting__button:disabled {
+  background-color: #e5e5e5;
+}
+.interesting__video-image {
+
+}
+.interesting__video-loading-line {
+  position: absolute;
+
+  top: 85%;
+  left: 6%;
+
+  width: 280px;
+  height: 46px;
+
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.interesting__video-loading-line::before {
+  content: "";
+
+  position: absolute;
+
+  top: 50%;
+  left: 8%;
+
+  width: 235px;
+  height: 3px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.interesting__video-loading-line::after {
+  content: "";
+
+  position: absolute;
+
+  top: 43%;
+  left: 20%;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 50% 50%;
+}
+
+.interesting__video-settings {
+  .reset();
+
+  position: absolute;
+
+  top: 98%;
+  left: 6%;
+
+  width: 280px;
+  height: 67px;
+
+  background-color: #f2f2f2;
+}
+.interesting__video-settings-button--remote {
+  .reset();
+
+  position: absolute;
+
+  top: 35%;
+  left: 8%
+}
+.interesting__video-settings-button--subtitles {
+  .reset();
+
+  position: absolute;
+
+  top: 35%;
+  left: 60%
+}
+
+.interesting__video-settings-button--fullscreen {
+  .reset();
+
+  position: absolute;
+
+  top: 35%;
+  left: 85%
+}
+.interesting__video-settings-button--remote:hover,
+.interesting__video-settings-button--remote:focus,
+.interesting__video-settings-button--subtitles:hover,
+.interesting__video-settings-button--subtitles:focus,
+.interesting__video-settings-button--fullscreen:hover,
+.interesting__video-settings-button--fullscreen:focus {
+  polygon {
+    fill:#333333;
+  }
+  path {
+    fill:#333333;
+  }
+}
+.interesting__video-settings-button--remoteactive,
+.interesting__video-settings-button--subtitles:active,
+.interesting__video-settings-button--fullscreenactive {
+  opacity: 0.3;
+}
 @media (min-width: @tablet-width) {
   .interesting {
     margin-bottom: 50px;
     padding: 0 94px;
   }
+  .interesting--video {
+    .reset();
 
+    padding: 0 60px;
+    margin-bottom: 75px;
+  }
+  .interesting__video-loading-line {
+    position: absolute;
+
+    top: 84%;
+    left: 8%;
+
+    width: 648px;
+    height: 93px;
+
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .interesting__video-loading-line::before {
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+    left: 14%;
+
+    width: 389px;
+    height: 3px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .interesting__video-loading-line::after {
+    content: "";
+
+    position: absolute;
+
+    top: 46%;
+    left: 30%;
+
+    width: 8px;
+    height: 8px;
+
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 50% 50%;
+  }
+  .interesting__video-settings {
+    background-color: transparent;
+  }
+  .interesting__video-settings-button--remote {
+    .reset();
+
+    position: absolute;
+
+    top: -77%;
+    left: 18%;
+
+    path {
+      fill: #ffffff;
+    }
+  }
+  .interesting__video-settings-button--subtitles {
+    .reset();
+
+    position: absolute;
+
+    top: -77%;
+    left: 187%;
+
+  }
+  .interesting__video-settings-button-icon--subtitles {
+        path {
+          fill: #ffffff;
+        }
+  }
+
+  .interesting__video-settings-button--fullscreen {
+    .reset();
+
+    position: absolute;
+
+    top: -77%;
+    left: 213%;
+  }
+  .interesting__video-settings-button-icon--fullscreen {
+    polygon {
+      fill: #ffffff;
+    }
+  }
+  .interesting__video-settings-button--remote:hover,
+  .interesting__video-settings-button--remote:focus,
+  .interesting__video-settings-button--subtitles:hover,
+  .interesting__video-settings-button--subtitles:focus,
+  .interesting__video-settings-button--fullscreen:hover,
+  .interesting__video-settings-button--fullscreen:focus {
+    opacity: 0.6;
+    polygon {
+      fill:#ffffff;
+    }
+    path {
+      fill:#ffffff;
+    }
+  }
+  .interesting__video-settings-button--remote:active,
+  .interesting__video-settings-button--subtitles:active,
+  .interesting__video-settings-button--fullscreen:active {
+    opacity: 0.3;
+  }
   .interesting__title {
     font-size: 30px;
   }
@@ -83,5 +313,94 @@
   .interesting {
     margin-bottom: 65px;
     padding: 0 370px;
+  }
+  .interesting--video {
+    .reset();
+
+    padding: 0 200px;
+    margin-bottom: 125px;
+  }
+  .interesting__video-loading-line {
+    position: absolute;
+
+    top: 84%;
+    left: 16.5%;
+
+    width: 800px;
+    height: 93px;
+
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .interesting__video-loading-line::before {
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+    left: 14%;
+
+    width: 540px;
+    height: 3px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .interesting__video-loading-line::after {
+    content: "";
+
+    position: absolute;
+
+    top: 46%;
+    left: 30%;
+
+    width: 8px;
+    height: 8px;
+
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 50% 50%;
+  }
+  .interesting__video-settings {
+    background-color: transparent;
+  }
+  .interesting__video-settings-button--remote {
+    .reset();
+
+    position: absolute;
+
+    top: -77%;
+    left: 60%;
+
+    path {
+      fill: #ffffff;
+    }
+  }
+  .interesting__video-settings-button--subtitles {
+    .reset();
+
+    position: absolute;
+
+    top: -77%;
+    left: 285%;
+
+  }
+  .interesting__video-settings-button-icon--subtitles {
+        path {
+          fill: #ffffff;
+        }
+  }
+
+  .interesting__video-settings-button--fullscreen {
+    .reset();
+
+    position: absolute;
+
+    top: -77%;
+    left: 310%;
+  }
+  .interesting__video-settings-button-icon--fullscreen {
+    polygon {
+      fill: #ffffff;
+    }
   }
 }

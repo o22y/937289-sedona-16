@@ -16,9 +16,7 @@
 .copyright__link {
   position: relative;
 }
-.copyright__link::before {
-  content: "";
-
+.copyright__link-icon {
   width: 27px;
   height: 34px;
 
@@ -26,10 +24,18 @@
 
   top: -8px;
   left: 20px;
-  position: absolute;
+}
 
-  background-image: url(../img/logo-htmlacademy.svg);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: 100%;
+.copyright__link:hover .copyright__link-icon,
+.copyright__link:focus .copyright__link-icon {
+  path {
+    fill: #89b8d5;
+  }
+}
+
+.copyright__link:active .copyright__link-icon {
+  opacity: 0.3;
+  path {
+    fill: #000000;
+  }
 }

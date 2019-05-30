@@ -30,6 +30,9 @@
   text-align: center;
 }
 
+.page-main__additional--form-page br {
+  display: none;
+}
 .page-main__map-container {
   position: relative;
 
@@ -59,16 +62,24 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-main__head br:nth-of-type(1) {
-    display: none;
+  .page-main__head {
+    font-size: 21px;
   }
-  .page-main__additional br:nth-of-type(1) {
-    display: none;
+  .page-main__head--intro {
+    font-size: 30px;
   }
-
-  .page-main__map-container::before {
-
-    left: 48%;
+  .page-main__additional--form-page {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: normal;
+    text-transform: @letter-transform;
+    color: #333333;
+    opacity: 1;
+  }
+  .page-main__additional--form-page br {
+    display: block;
   }
 }
 @media (min-width: @desktop-width) {
